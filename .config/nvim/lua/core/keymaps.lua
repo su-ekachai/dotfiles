@@ -10,6 +10,8 @@ local keymap = vim.keymap -- for conciseness
 -- use jk to exit insert mode
 keymap.set("i", "jk", "<ESC>")
 
+-- select all and copy
+keymap.set("n", "<leader>ac", "ggVGy")
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
