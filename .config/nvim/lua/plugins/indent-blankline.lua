@@ -1,11 +1,27 @@
--- import comment plugin safely
-local setup, indent_blankline = pcall(require, "indent_blankline")
-if not setup then
-	return
-end
-
--- enable comment
-indent_blankline.setup({
-	show_current_context = true,
-	show_current_context_start = true,
-})
+return {
+  "lukas-reineke/indent-blankline.nvim",
+  -- event = "LazyFile",
+  opts = {
+    indent = {
+      char = "│",
+      tab_char = "│",
+    },
+    scope = { enabled = false },
+    exclude = {
+      filetypes = {
+        "help",
+        "alpha",
+        "dashboard",
+        "neo-tree",
+        "Trouble",
+        "trouble",
+        "lazy",
+        "mason",
+        "notify",
+        "toggleterm",
+        "lazyterm",
+      },
+    },
+  },
+  main = "ibl",
+}

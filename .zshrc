@@ -84,9 +84,13 @@ plugins=(
   zsh-syntax-highlighting 
   fast-syntax-highlighting 
   zsh-autocomplete
+  poetry
 )
 
  source $ZSH/oh-my-zsh.sh
+ source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
+ source $(dirname $(gem which colorls))/tab_complete.sh
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -112,10 +116,19 @@ plugins=(
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
+alias python=/Library/Frameworks/Python.framework/Versions/3.10/bin/python3
+alias pip=/Library/Frameworks/Python.framework/Versions/3.10/bin/pip3
+alias vi="nvim"
+alias vim="nvim"
+alias oldvim="vim"
+alias ls="colorls"
+alias sls="ls"
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 # source ~/powerlevel10k/powerlevel10k.zsh-theme
-alias python=/Library/Frameworks/Python.framework/Versions/3.10/bin/python3
-alias pip=/Library/Frameworks/Python.framework/Versions/3.10/bin/pip3
+
+
+# Created by `pipx` on 2023-06-19 06:33:12
+export PATH="$PATH:/Users/eakkz/.local/bin"
