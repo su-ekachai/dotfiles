@@ -1,0 +1,42 @@
+# ── General ────────────────────────────────────────────────────────
+
+term = xterm-256color
+shell-integration = zsh
+
+# ── Window ─────────────────────────────────────────────────────────
+
+window-decoration = true
+window-padding-x = 8
+window-padding-y = 8
+window-save-state = always
+macos-titlebar-style = native
+macos-option-as-alt = true
+
+# ── Font ───────────────────────────────────────────────────────────
+
+font-family = MesloLGS NF
+font-size = 12.5
+adjust-cell-height = 10%
+
+# ── Theme (Catppuccin Mocha) ───────────────────────────────────────
+
+theme = Catppuccin Mocha
+
+# ── Tab Bar ────────────────────────────────────────────────────────
+
+gtk-tabs-location = top
+
+# ── Keyboard ───────────────────────────────────────────────────────
+# Shift+Enter sends newline (Ctrl+J) for Claude Code in tmux
+
+keybind = shift+enter=text:\x0a
+keybind = alt+enter=text:\x0a
+
+# ── Scrolling ─────────────────────────────────────────────────────
+
+scrollback-limit = 10000
+
+# ── Clipboard ─────────────────────────────────────────────────────
+
+copy-on-select = clipboard
+clipboard-paste-protection = false
