@@ -13,6 +13,15 @@
         "type": "separator"
       },
       {
+        "id": "effort-1",
+        "type": "thinking-effort",
+        "color": "brightYellow"
+      },
+      {
+        "id": "effort-sep",
+        "type": "separator"
+      },
+      {
         "id": "5",
         "type": "git-branch",
         "color": "magenta",
@@ -41,19 +50,46 @@
     ],
     [
       {
-        "id": "0b4cd3e7-a6cf-4c5b-9841-396cd2929c06",
+        "id": "reset-time",
         "type": "reset-timer",
         "color": "green",
         "metadata": {
           "display": "time"
         }
+      },
+      {
+        "id": "reset-sep",
+        "type": "separator"
+      },
+      {
+        "id": "reset-bar",
+        "type": "session-usage",
+        "color": "green",
+        "metadata": {
+          "display": "progress-short"
+        }
       }
     ],
     [
       {
-        "id": "6c72c5b7-53b5-4e36-a49f-a3ddb79427b7",
+        "id": "weekly-time",
         "type": "weekly-reset-timer",
-        "color": "brightCyan"
+        "color": "brightCyan",
+        "metadata": {
+          "display": "time"
+        }
+      },
+      {
+        "id": "weekly-sep",
+        "type": "separator"
+      },
+      {
+        "id": "weekly-bar",
+        "type": "weekly-usage",
+        "color": "brightCyan",
+        "metadata": {
+          "display": "progress-short"
+        }
       }
     ]
   ],
@@ -66,7 +102,7 @@
   "powerline": {
     "enabled": false,
     "separators": [
-      ""
+      "\ue0b0"
     ],
     "separatorInvertBackground": [
       false
